@@ -1,9 +1,9 @@
 const notesInp = document.querySelector("#notes");
 const noteCards = document.querySelector("#card");
-const saveBtn = document.querySelector(".save");
+const saveBtn = document.querySelector("#save");
 const notes = [];
 
-const saveNotes = () => {
+saveBtn.addEventListener("click", () => {
     let note = {
         input: notesInp.value,
     };
@@ -11,8 +11,4 @@ const saveNotes = () => {
     notesInp = "";
     console.log(notes);
     console.log(note);
-};
-
-saveBtn.addEventListener("click", () => {
-    saveNotes();
 });
