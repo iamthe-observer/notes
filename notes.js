@@ -13,3 +13,5 @@ if (notesInp != "") {
         console.log(note);
     });
 }
+
+console.log(window.innerWidth);
