@@ -7,9 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notes</title>
     <link rel="stylesheet" href="notes.css" />
+    <script defer src="notes.js"></script>
 </head>
 
 <body>
+    <div class="" id="overlay">
+        <span id="id"></span>
+        <div class="modal">
+            <div class="notesBody">
+            </div>
+            <div class="notesTime">
+            </div>
+        </div>
+    </div>
+
     <div class="canvas">
         <div class="head">
             <h1 class="image-text">drafts!</h1>
@@ -17,14 +28,17 @@
         <div class="input">
             <textarea name="notes" type="text" id="notes"></textarea>
             <br />
-            <label id="point1" for="notes">Type your notes above☝🏾</label>
-            <button id="save">Save</button>
+            <label id="point1" for="notes">Type your notes above ☝🏾</label>
+            <div id="button">
+                <button class="btn" id="save">Save</button>
+                <button class="btn" id="clear">Clear</button>
+            </div>
+            <span>saved notes down here</span>
         </div>
 
-        <div class="body-notes">
-            <div class="card">
-            </div>
+        <div style="display: none;" class="body-notes">
         </div>
+
     </div>
 </body>
 
